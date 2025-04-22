@@ -256,6 +256,9 @@ function ProductList({ onHomeClick }) {
         setShowCart(false);
     };
     const handleAddToCart = (product) => {
+        console.log('====================================');
+        console.log(product);
+        console.log('====================================');
         dispatch(addItem(product));
         setaddedToCart((prevState) => ({
            ...prevState,
